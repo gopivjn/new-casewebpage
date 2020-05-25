@@ -78,6 +78,10 @@ h1 {
 
 }
 
+.nav-card {
+  position: sticky;
+  top:55px;
+}
 
 
 /* Navigation */
@@ -562,7 +566,7 @@ p span{
 /* Wizzlet Stat */
 
 #wizzlets {
-    height: 450px;
+    height: 420px;
     overflow: scroll;
 }
 
