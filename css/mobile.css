@@ -1,0 +1,20 @@
+  
+  :root {
+  --max-width:768px;
+  }
+
+body {
+border: solid 3px goldenrod;
+}
+
+#main-content .main-container {
+  display: grid;
+  grid-template-columns: 8fr;
+}
+
+#content #top-row {
+  grid-template-columns: 8fr;
+  /* grid-gap: 0.1rem; */
+}
+
+
