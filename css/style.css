@@ -19,9 +19,8 @@
 
 body {
   background: var(--bgmain-color);
-  font-family: 'Roboto', sans-serif;
   max-width: var(--max-width);
-
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -31,15 +30,14 @@ h1 {
 
 .card {
   background: var(--primary-color);
-  padding: 0.5rem;
-  margin:0.2rem;
-  /* border: solid 1px black; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card-side {
   background: var(--secondary-color);
   padding: 1rem;
-  margin:0.2rem;
+  margin:0.2rem 0;
 }
 
 #overview #supertitle-m {
@@ -47,50 +45,73 @@ h1 {
   color: var(--supertitleprimary-color);
   text-transform: uppercase;
   font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
 }
 #overview #title-m {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
+  line-height: 36px;
+  white-space: normal;
   font-weight: 500;
   color: rgb(43, 43, 43);
 }
 #overview #subjects-m {
   font-family: 'Roboto', sans-serif;
   color: var(--subjects-color);
-  padding-bottom: 0.2rem;
+  padding-top: 10px;
 }
 #subjects {
   color: var(--subjects-color);
   font-size: 13px;
+  padding-top: 6px;
 }
 
 #supertitle{
   color: var(--supertitleprimary-color);
   text-transform: uppercase;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
-
+  margin-bottom: 3px;
 }
+
+.overview-container {
+  background: var(--primary-color);
+}
+
+.slab {
+  font-size: 19.012px ;
+  line-height: 2.143rem;
+  white-space: normal;
+  font-family: "Roboto Slab";
+  font-weight: lighter;
+  color: rgb(65, 65, 65);
+}
+
+strong { 
+  font-weight: bold; 
+}
+
+.banner {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
 
 #title{
   color: var(--titlesecondary-color);
   font-size: 14px;
   font-family: 'roboto', sans-serif;
-
+  line-height: 20px;
 }
-
-/* .nav-card {
-  position: sticky;
-  top:55px;
-} */
-
 
 /* Navigation */
 
 #main-appbar {
   background: #fff;
-  height: 55px;
+  height: 60px;
   position: sticky;
   top:0;
   z-index: 2;
@@ -99,16 +120,21 @@ h1 {
 
 #main-appbar .container {
   display: grid;
-  grid-template-columns: 10fr 2fr;
+  grid-template-columns: 9fr 2fr;
   align-items: center;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 #main-appbar ul {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-around;
   list-style: none;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0;
   margin-right:1.5rem;
 
 }
@@ -118,14 +144,15 @@ h1 {
   font-weight: 100;
   color: #1E3657;
   padding-bottom: 1rem;
+  text-align: ;
 
 }
 
+#main-appbar .logo {
+  width: 95px;
+}
 #main-appbar .user {
-  width: 38px;
-}
-#main-appbar .app-icons {
-padding-bottom:0.2rem;
+  width: 34px;
 }
 
 /* Nav and Namecard */
@@ -137,7 +164,8 @@ padding-bottom:0.2rem;
 margin-bottom: 0.1rem;
 }
 .namecard img {
-width: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .nav {
@@ -160,27 +188,29 @@ width: 60px;
   max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat (12, 1fr);
-  grid-template-rows: 55px 1fr 30px;
+  /* grid-template-rows: 55px 1fr 30px; */
 
 }
 
 #page {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 2.5fr 9.5fr;
-  border: goldenrod 1px solid;
+  grid-template-columns: 2.5fr 9.5fr ;
+  grid-gap: 5px;
   background: var(--bgmain-color);
+  padding:8px;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 6fr 3.5fr;
   overflow-y: scroll;
+  grid-gap: 8px;
 }
 
 /* Overview */
 
-#overview p {
+/* #overview p {
     font-family: "Roboto Slab";
     color: #414141;
     font-size: 19.012px;
@@ -189,26 +219,17 @@ width: 60px;
     letter-spacing: normal;
     word-spacing: 0px;
     margin: 0px;
-    padding-top: 5px;
     font-weight: 300;
     text-transform: none;
-}
-#overview .banner-img {
-  padding: 0 !important;
-}
-.bold {
-  font-family: "Roboto Slab";
-  color: #414141;
-  font-weight: 500;
-  font-size: 19px;
+} */
 
-}
 
 /* Snapshot */
 
 #snapshot{
-  height: 246px;
+  height: 243px;
   overflow-y: scroll;
+  padding-top: 16px;
 }
 .shead{
     color:#000000;
@@ -355,7 +376,7 @@ p span{
     letter-spacing:normal;
     word-spacing:0px;
     margin:0px;
-    font-weight: 400;
+    /* font-weight: 400; */
     text-transform:none;
 }
 #vcontainerin{
@@ -367,7 +388,7 @@ p span{
     word-spacing:0px;
     margin:0px;
     padding:10px 0px;
-    font-weight: 400;
+    /* font-weight: 400; */
     text-transform:none;
 }
 .vhead{
@@ -379,7 +400,7 @@ p span{
     word-spacing:0px;
     margin:0px;
     padding:16px 16px 0px;
-    font-weight: 400;
+    /* font-weight: 400; */
     text-transform:none;
     text-align: left;
 }
@@ -393,7 +414,7 @@ p span{
     word-spacing:0px;
     margin:0px;
     padding:0px;
-    font-weight:400;
+    /* font-weight:300; */
     text-transform:uppercase;
 }
 
@@ -412,12 +433,12 @@ p span{
     word-spacing:0px;
     margin:0px 0px 16px;
     padding:16px 16px 0px;
-    font-weight:400;
+    /* font-weight:400; */
     text-transform:none;
 }
 .vicon1{
     color:#000000;
-    font: size 14px;
+    font-size: 14px;
     line-height:20x;
     vertical-align:baseline;
     letter-spacing:normal;
@@ -429,7 +450,7 @@ p span{
 }
 
 .vsets img{
-    height: 52px;
+    height: 70px;
 }
 .vbody{
     color:#000000;
@@ -452,7 +473,7 @@ p span{
     line-height: 21px;
     text-transform: uppercase;
     margin-bottom: 4px;
-    font-weight: 600;
+    font-weight: 400;
     font-weight: var(--titleprimary-color);
 } 
 .vsupertitle{
@@ -585,7 +606,7 @@ p span{
     color:#adadad;
     font-size:48px;
     padding:12px 0px 14px;
-    font-weight:lighter;
+    font-weight:;
     text-transform:uppercase; 
 }   
 .wtitle{
@@ -628,5 +649,79 @@ p span{
   z-index: 2;
   box-shadow: 1px 1px 4px 1px #464646;
   font-size: 10.5px;
+
+}
+
+@media (max-width:768px)  {
+
+  #page {
+  grid-template-columns: 1fr;
+  }
+
+  .content {
+  grid-template-columns: 1fr;
+  }
+
+  .namecard {
+  display: flex;
+  justify-content: space-between;
+  }
+  .navmenu {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--secondary-color);
+  }
+
+  .banner {
+    width: 100%;
+  }
+  .nav.card-side {
+    text-align: center;
+  }
+
+  #snapshot, #wizzlets {
+  /* width: 275px; */
+  }
+  .vsetsgroup{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .vsets {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+
+}
+
+@media (max-width:310px)  {
+  
+  #main-appbar h1 {
+  font-size: medium;
+  }
+
+  #main-appbar .user {
+    width: 18px;
+  }
+  #main-appbar .logo {
+    width: 60px;
+  }
+  .nav {
+  display: inline-block;
+  width: 46.9%;
+  }
+
+  /* #page {
+  grid-template-columns: 1fr;
+  } */
+  .content {
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  }
+ 
 
 }
